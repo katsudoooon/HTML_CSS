@@ -20,7 +20,7 @@ main {
   background-color: #eeeeee;
 }
 
-.step:nth-child(-n+2) {
+.step:nth-child(-n + 2) {
   margin-right: 30px;
 }
 
@@ -28,14 +28,14 @@ main {
   background-color: #ff9a4b;
   color: white;
   position: relative;
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
   display: inline-block;
 }
 
 .step-img1,
 .step-img2,
-.step-img3  {
+.step-img3 {
   width: 280px;
   height: 150px;
   margin: 10px;
@@ -62,4 +62,21 @@ main {
 footer {
   height: 50px;
   background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .step {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .step:nth-child(-n + 2) {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 }
