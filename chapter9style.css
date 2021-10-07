@@ -15,30 +15,27 @@ main {
   display: flex;
 }
 
-.step1,
-.step2,
-.step3 {
+.step {
   width: 300px;
   background-color: #eeeeee;
 }
 
-.step1,
-.step2 {
+.step:nth-child(-n+2) {
   margin-right: 30px;
 }
 
-.step {
+.step-icon {
   background-color: #ff9a4b;
   color: white;
   position: relative;
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
   display: inline-block;
 }
 
-.step1-img,
-.step2-img,
-.step3-img {
+.step-img1,
+.step-img2,
+.step-img3 {
   width: 280px;
   height: 150px;
   margin: 10px;
@@ -46,15 +43,15 @@ main {
   background-position: bottom;
 }
 
-.step1-img {
+.step-img1 {
   background-image: url(img/flow01.png);
 }
 
-.step2-img {
+.step-img2 {
   background-image: url(img/flow02.png);
 }
 
-.step3-img {
+.step-img3 {
   background-image: url(img/flow03.png);
 }
 
