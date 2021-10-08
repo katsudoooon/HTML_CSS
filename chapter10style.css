@@ -67,16 +67,24 @@ footer {
 @media screen and (max-width: 768px) {
   main {
     width: 100%;
-    display: block;
+    display: inline-block;
   }
 
   .step {
     width: 90%;
     margin: 0 auto;
+    padding-top: 0.1px;
   }
 
   .step:nth-child(-n + 2) {
     margin-right: auto;
     margin-bottom: 20px;
   }
+
+  .step-img1,
+  .step-img2,
+  .step-img3{
+    width: auto;
+}
+
 }
